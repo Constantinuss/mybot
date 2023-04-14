@@ -51,7 +51,7 @@ def show(message):
              tasky = [task + ' на сегодня ' + '\n']
              bot.send_message(message.chat.id, tasky)
         else:
-         tasky = 'На сегодня ничего не запланировано но можем: ' + choice(RANDOM_TASKS)
+         tasky = 'На сегодня ничего не запланировано, но можем: ' + choice(RANDOM_TASKS)
          bot.send_message(message.chat.id, tasky)
       else:
         b1 = b[1].split('.') # разбиваю дату стр
@@ -64,7 +64,7 @@ def show(message):
              tasky = [task + ' на дату ' + date.strftime("%m/%d/%Y") + '\n']
              bot.send_message(message.chat.id, tasky)
         else:
-          tasky = 'На эту дату ничего не запланировано но можем: ' + choice(RANDOM_TASKS)
+          tasky = 'На эту дату ничего не запланировано, но можем: ' + choice(RANDOM_TASKS)
           bot.send_message(message.chat.id, tasky)
 
 
